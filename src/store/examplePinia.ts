@@ -1,0 +1,37 @@
+// Vue Core
+import { ref } from 'vue'
+import { defineStore } from 'pinia'
+
+// Types
+import ILink from '../types/ILink'
+
+// Store
+const useExamplePiniaStore = defineStore('examplePiniaStore', () => {
+  // State
+  const count = ref(0)
+  const input = ref('Test')
+  const copyright: Array<ILink> = [
+    { id: 1, type: 'homepage', text: 'Demetory', url: 'https://demetrey.ru/' },
+    { id: 2, type: 'repo', text: 'Github', url: 'https://github.com/Demetory/dim-nuxt3-template' },
+  ]
+
+  // Methods
+  const increment = () => {
+    count.value++
+  }
+
+  const decrement = () => {
+    count.value--
+  }
+
+  const getCopyrightUrl = (key: string, value: string) => {
+    const element: any = copyright.find(link => link[key] === value)
+    const result: string = element ? element.url : ''
+    return result
+  }
+
+  return { count, input, copyright, increment, decrement, getCopyrightUrl }
+})
+
+// Export
+export { useExamplePiniaStore }

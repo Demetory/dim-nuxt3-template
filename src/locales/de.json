@@ -1,0 +1,6 @@
+{
+  "hello": "Grüß Gott, {name}!",
+  "error": "Etwas hat schief gelaufen",
+  "examples": "Beispiele",
+  "language": "Sprache"
+}
