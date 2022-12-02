@@ -3,9 +3,7 @@
     <template #icon>
       <AtomIconModule />
     </template>
-    <template #heading>
-      Installed Modules
-    </template>
+    <template #heading> Installed Modules </template>
     <template #content>
       <ul>
         <li>

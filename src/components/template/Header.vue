@@ -2,9 +2,7 @@
   <header>
     <section class="head-logo">
       <AtomCube />
-      <h1 class="heading">
-        Dim Nuxt 3 Template
-      </h1>
+      <h1 class="heading">Dim Nuxt 3 Template</h1>
       <MoleculeNavi />
       <OrganismSwitchLang />
     </section>

@@ -31,6 +31,7 @@
   },
   "dependencies": {
     "@pinia/nuxt": "^0.4.4",
+    "@rushstack/eslint-patch": "^1.2.0",
     "pinia": "^2.0.24"
   }
 }

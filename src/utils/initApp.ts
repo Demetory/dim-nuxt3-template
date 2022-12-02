@@ -4,19 +4,19 @@ const InitApp = () => {
   useHead({
     link: [
       {
-        rel: 'stylesheet',
-        href: '/css/reset.css',
+        rel: "stylesheet",
+        href: "/css/reset.css",
       },
       {
-        rel: 'stylesheet',
-        href: '/css/noscript.css',
+        rel: "stylesheet",
+        href: "/css/noscript.css",
       },
     ],
-  })
+  });
 
   // Shows welcome logo in console
-  useConsoleImage(exampleLogo)
-}
+  useConsoleImage(exampleLogo);
+};
 
 // Export
-export { InitApp }
+export { InitApp };

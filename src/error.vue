@@ -1,6 +1,6 @@
 <script setup lang="ts">
 // Types
-import IError from '@/types/IError'
+import IError from "@/types/IError";
 
 // Props
 defineProps({
@@ -8,15 +8,15 @@ defineProps({
     type: Object as () => IError,
     required: true,
   },
-})
+});
 
 // Data
-const siteTitle = 'Dim Nuxt 3 Template'
+const siteTitle = "Dim Nuxt 3 Template";
 
 // Methods
-InitApp()
+InitApp();
 
-const handleError = () => clearError({ redirect: '/' })
+const handleError = () => clearError({ redirect: "/" });
 </script>
 
 <template>
@@ -28,7 +28,7 @@ const handleError = () => clearError({ redirect: '/' })
     <Body>
       <NoScript>
         <section class="noscript">
-          <img src="/images/fatality.svg">
+          <img src="/images/fatality.svg" />
           <div>
             <h1>Easy, Tiger</h1>
             <p>Turn JavaScript on, don`t be so paraniod.</p>
@@ -41,7 +41,9 @@ const handleError = () => clearError({ redirect: '/' })
           <h1>{{ $t("error.title") }}</h1>
           <p>{{ $t("error.code") }}: {{ error.statusCode }}</p>
           <p>{{ $t("error.message") }}: {{ error.statusMessage }}</p>
-          <p><a @click.stop="handleError">{{ $t("error.back") }}</a></p>
+          <p>
+            <a @click.stop="handleError">{{ $t("error.back") }}</a>
+          </p>
         </section>
       </NuxtLayout>
     </Body>
@@ -53,6 +55,8 @@ const handleError = () => clearError({ redirect: '/' })
   p {
     margin: 1rem 0;
   }
-  a { cursor: pointer; }
+  a {
+    cursor: pointer;
+  }
 }
 </style>

@@ -1,13 +1,13 @@
 <script setup lang="ts">
 // Modules
-import { useLocalStorage, useMouse } from '@vueuse/core'
+import { useLocalStorage, useMouse } from "@vueuse/core";
 
 // Data
-const { x, y } = useMouse()
-const localStore = useLocalStorage('my-storage', {
-  name: 'Apple',
-  color: 'red',
-})
+const { x, y } = useMouse();
+const localStore = useLocalStorage("my-storage", {
+  name: "Apple",
+  color: "red",
+});
 </script>
 
 <template>
@@ -15,9 +15,7 @@ const localStore = useLocalStorage('my-storage', {
     <template #icon>
       <AtomIconModule />
     </template>
-    <template #heading>
-      UseUse Example
-    </template>
+    <template #heading> UseUse Example </template>
     <template #content>
       <p>Mouse Position: {{ x }} + {{ y }}</p>
       <p>Local Store: {{ localStore }}</p>

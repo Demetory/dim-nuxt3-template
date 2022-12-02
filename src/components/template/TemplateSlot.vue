@@ -73,4 +73,19 @@
     }
   }
 }
+
+@media (max-width: 1280px) {
+  .item {
+    padding-left: 0;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+
+    &__icon {
+      display: none;
+    }
+  }
+}
 </style>

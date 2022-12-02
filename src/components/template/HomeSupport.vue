@@ -1,14 +1,14 @@
 <script setup lang="ts">
 // Modules
-import { useExamplePiniaStore } from '@/store/examplePinia'
+import { useExamplePiniaStore } from "@/store/examplePinia";
 
 // Data
-const examplePiniaStore = useExamplePiniaStore()
+const examplePiniaStore = useExamplePiniaStore();
 
 // Methods
 const getLinkUrl = (value: string) => {
-  return examplePiniaStore.getCopyrightUrl('type', value)
-}
+  return examplePiniaStore.getCopyrightUrl("type", value);
+};
 </script>
 
 <template>
@@ -16,9 +16,7 @@ const getLinkUrl = (value: string) => {
     <template #icon>
       <AtomIconSupport />
     </template>
-    <template #heading>
-      Support
-    </template>
+    <template #heading> Support </template>
     <template #content>
       <p>
         Visit my

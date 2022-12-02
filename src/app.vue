@@ -1,6 +1,6 @@
 <script setup lang="ts">
 // Methods
-InitApp()
+InitApp();
 </script>
 
 <template>
