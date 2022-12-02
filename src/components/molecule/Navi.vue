@@ -3,7 +3,6 @@
 const data = [
   { path: "/", translate: "home" },
   { path: "/examples", translate: "examples" },
-  { path: "/error", translate: "error" },
 ];
 </script>
 
