@@ -1,7 +1,8 @@
 <script setup lang="ts">
+// Hooks
 definePageMeta({
-  title: 'navi.examples',
-})
+  title: "navi.examples",
+});
 </script>
 
 <template>

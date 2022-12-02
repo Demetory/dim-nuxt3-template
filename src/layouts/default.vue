@@ -1,18 +1,18 @@
 <script setup lang="ts">
 // Modules
-import { useI18n } from 'vue-i18n'
+import { useI18n } from "vue-i18n";
 
 // Data
-const route = useRoute()
-const { t } = useI18n()
-const siteTitle = 'Dim Nuxt 3 Template'
+const route = useRoute();
+const { t } = useI18n();
+const siteTitle = "Dim Nuxt 3 Template";
 
 // Computed Properties
 const title = computed(() => {
-  const translate = route.meta.title ? t(`${route.meta.title}`) : null
-  const result = translate ? `${siteTitle} | ${translate}` : siteTitle
-  return result
-})
+  const translate = route.meta.title ? t(`${route.meta.title}`) : null;
+  const result = translate ? `${siteTitle} | ${translate}` : siteTitle;
+  return result;
+});
 </script>
 
 <template>
@@ -24,7 +24,7 @@ const title = computed(() => {
     <Body>
       <NoScript>
         <section class="noscript">
-          <img src="/images/fatality.svg">
+          <img src="/images/fatality.svg" />
           <div>
             <h1>Easy, Tiger</h1>
             <p>Turn JavaScript on, don`t be so paraniod.</p>

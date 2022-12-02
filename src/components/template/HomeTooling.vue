@@ -3,9 +3,7 @@
     <template #icon>
       <AtomIconTooling />
     </template>
-    <template #heading>
-      Tooling
-    </template>
+    <template #heading> Tooling </template>
     <template #content>
       <ul>
         <li>

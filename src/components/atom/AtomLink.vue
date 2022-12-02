@@ -1,6 +1,6 @@
 <script setup lang="ts">
 // Types
-import type ILink from '@/types/ILink'
+import type ILink from "@/types/ILink";
 
 // Props
 defineProps({
@@ -8,7 +8,7 @@ defineProps({
     type: Object as () => ILink,
     required: true,
   },
-})
+});
 </script>
 
 <template>

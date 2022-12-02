@@ -14,7 +14,7 @@ const exampleLogo = `
     <path fill="#FFFFFF" d="M15.5,19.3H19v1.3h-3.5l-5,2.6v-1.4l3.8-1.8l-3.8-1.8v-1.4L15.5,19.3z"/>
   </g>
 </svg>
-`
+`;
 
 // Export
-export { exampleLogo }
+export { exampleLogo };
