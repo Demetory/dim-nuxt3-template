@@ -1,6 +1,17 @@
 {
-  "hello": "Привет, {name}!",
-  "error": "Что-то пошло не так",
-  "examples": "Примеры",
-  "language": "Язык"
+  "layouts": {
+    "title": "Dim Nuxt 3 Template"
+  },
+  "language": "Язык",
+  "error": {
+    "title": "Что-то пошло не так",
+    "code": "Код ошибки",
+    "message": "Сообщение",
+    "back": "На главную"
+  },
+  "navi": {
+    "home": "Главная",
+    "examples": "Примеры",
+    "error": "404"
+  }
 }

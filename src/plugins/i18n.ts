@@ -1,8 +1,12 @@
+// Module
 import { createI18n } from 'vue-i18n'
+
+// Locales
 import en from '../locales/en.json'
 import de from '../locales/de.json'
 import ru from '../locales/ru.json'
 
+// I18n Plugin
 export default defineNuxtPlugin(({ vueApp }) => {
   const i18n = createI18n({
     legacy: false,
