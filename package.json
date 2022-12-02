@@ -10,6 +10,8 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
+    "test:e2e": "start-server-and-test preview :4173 'cypress run --e2e'",
+    "test:e2e:dev": "start-server-and-test 'vite dev --port 4173' :4173 'cypress open --e2e'",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "update": "npm update"
@@ -19,6 +21,7 @@
     "@intlify/unplugin-vue-i18n": "^0.8.0",
     "@vueuse/core": "^9.5.0",
     "@vueuse/nuxt": "^9.5.0",
+    "cypress": "^11.2.0",
     "eslint": "^8.27.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
@@ -27,6 +30,7 @@
     "prettier": "2.7.1",
     "sass": "^1.56.1",
     "sass-loader": "^13.2.0",
+    "start-server-and-test": "^1.14.0",
     "vue-i18n": "^9.2.2"
   },
   "dependencies": {
