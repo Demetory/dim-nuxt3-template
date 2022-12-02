@@ -1,6 +1,14 @@
 {
-  "hello": "Hello, {name}!",
-  "error": "Something goes wrong",
-  "examples": "Examples",
-  "language": "Language"
+  "language": "Language",
+  "error": {
+    "title": "Something goes wrong",
+    "code": "Error code",
+    "message": "Message",
+    "back": "Back to home"
+  },
+  "navi": {
+    "home": "Home",
+    "examples": "Examples",
+    "error": "404"
+  }
 }

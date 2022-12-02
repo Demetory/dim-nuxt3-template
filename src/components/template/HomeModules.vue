@@ -9,10 +9,6 @@
     <template #content>
       <ul>
         <li>
-          Routing:
-          <a href="https://router.vuejs.org/" target="_blank" rel="noopener">Vue Router</a>
-        </li>
-        <li>
           Vue Store:
           <a href="https://pinia.vuejs.org/" target="_blank" rel="noopener">Pinia</a>
         </li>
@@ -21,8 +17,8 @@
           <a href="https://vueuse.org/" target="_blank" rel="noopener">VueUse</a>
         </li>
         <li>
-          Promise based HTTP client:
-          <a href="https://axios-http.com/" target="_blank" rel="noopener">Axios</a>
+          Internationalization framework:
+          <a href="https://v8.i18n.nuxtjs.org/" target="_blank" rel="noopener">Nuxt i18n</a>
         </li>
         <li>
           CSS Preprocessor:

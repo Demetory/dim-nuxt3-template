@@ -1,32 +1,47 @@
 # Nuxt 3 Starter
-
 - [Nuxt 3](https://nuxt.com/) Minimalistic Starter Template
 - Uses [TypeScript](https://www.typescriptlang.org/) and [Script Setup SFC](https://vuejs.org/api/sfc-script-setup.html)
 
-## Preview
-![image](/src/public/cover.jpg)
-
 ## Features
 - Full configured and ready
-- No complex and heavy dependencies
-- Prepared Public Folder (Icons, robots.txt, htaccess, humans.txt)
-- CSS normalization and pre-configured SCSS Maps and Modules
+- No complex || heavy dependencies
+- Atomic Design Patter
+- Pre-configured HTML index page (including SEO-metatags and No-Script section)
+- Prepared public folder (icons, robots.txt, htaccess, humans.txt, etc)
+- CSS normalization
+- SCSS Maps and Modules in global scope
+- Simple code examples for Storage, Composables, TypeScript, Modules
+- ESLint + Prettier for better code quality
+- Cypress + Vitest for testing
 - Localiztion example
-- Custom Error pages
+- Custom error page
+<br/><br/>
+
+## Preview
+[Live Demo](http://nuxt3-template.demetrey.ru/)
+<br/><br/>
+![image](/src/public/cover.jpg)
+<br/><br/>
+
+## Requirements
+- [Node.js](https://nodejs.org/en/): >= 16.11.0
+- [npm](https://www.npmjs.com/): >= 6.32.4
+  <br/><br/>
 
 ## Recommended IDE
 - [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+  <br/><br/>
 
-## Engines
-- [Node.js](https://nodejs.org/en/): >= 16.11.0
-- [npm](https://www.npmjs.com/): >= 6.32.4
+## Installed Modules
+- [Pinia](https://pinia.vuejs.org/) &rarr; Storage
+- [VueUse](https://vueuse.org/) &rarr; Best Collection of Vue Composition Utilities
+- [Nuxt i18n](https://v8.i18n.nuxtjs.org/) &rarr; Internationalization framework
+- [SASS](https://sass-lang.com/) &rarr; CSS Preprocessor
+- [ESLint](https://eslint.org/) + [Prettier](https://prettier.io/) &rarr; linting and code formatting
+- [Cypress](https://www.cypress.io/) &rarr; End-to-End (e2e) testing framework
+- [Vitest](https://vitest.dev/) &rarr; Unit testing framework
+  <br/><br/>
 
-## Configured Modules
-- [Pinia](https://pinia.vuejs.org/) as Storage
-- [VueUse](https://vueuse.org/) as Best Collection of Vue Composition Utilities
-- [ESLint](https://eslint.org/) + [Prettier](https://prettier.io/) for linting and code formatting
-- [Vue I18n](https://vue-i18n.intlify.dev/) Internationalization plugin for Vue.js
-- [SASS](https://sass-lang.com/) as CSS Preprocessor
 
 ## Setup
 

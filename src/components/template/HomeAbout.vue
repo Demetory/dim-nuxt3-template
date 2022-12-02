@@ -4,7 +4,7 @@
       <AtomIconDocumentation />
     </template>
     <template #heading>
-      Vue + Vite Starter Template
+      Nuxt 3 Starter Template
     </template>
     <template #content>
       <p>

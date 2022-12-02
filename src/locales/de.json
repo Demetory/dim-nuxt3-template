@@ -1,6 +1,14 @@
 {
-  "hello": "Grüß Gott, {name}!",
-  "error": "Etwas hat schief gelaufen",
-  "examples": "Beispiele",
-  "language": "Sprache"
+  "language": "Sprache",
+  "error": {
+    "title": "Etwas hat schief gelaufen",
+    "code": "Fehlercode",
+    "message": "Meldung",
+    "back": "Zurück zur Startseite"
+  },
+  "navi": {
+    "home": "Startseite",
+    "examples": "Beispiele",
+    "error": "404"
+  }
 }

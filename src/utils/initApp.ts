@@ -1,5 +1,5 @@
-// Export
-export function InitApp() {
+// Runs by application start
+const InitApp = () => {
   // Setting base css in index.html
   useHead({
     link: [
@@ -17,3 +17,6 @@ export function InitApp() {
   // Shows welcome logo in console
   useConsoleImage(exampleLogo)
 }
+
+// Export
+export { InitApp }

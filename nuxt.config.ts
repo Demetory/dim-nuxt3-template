@@ -26,8 +26,8 @@ export default defineNuxtConfig({
       preprocessorOptions: {
         scss: {
           additionalData: `
-            @use "@/assets/scss/colors.scss" as colors;
-            @use '@/assets/scss/grid.scss' as grid;
+            @use "@/assets/scss/var.colors.scss" as colors;
+            @use '@/assets/scss/var.grid.scss' as grid;
          `,
         },
       },
