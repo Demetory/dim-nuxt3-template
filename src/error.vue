@@ -10,15 +10,21 @@ defineProps({
   },
 })
 
+// Data
+const siteTitle = 'Dim Nuxt 3 Template'
+
 // Methods
 InitApp()
-usePageTitle('Error')
 
 const handleError = () => clearError({ redirect: '/' })
 </script>
 
 <template>
   <Html :lang="$i18n.locale">
+    <Head>
+      <Title>{{ siteTitle }}</Title>
+    </Head>
+
     <Body>
       <NoScript>
         <section class="noscript">

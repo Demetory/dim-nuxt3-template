@@ -1,5 +1,7 @@
 <script setup lang="ts">
-usePageTitle('Home')
+definePageMeta({
+  title: 'navi.home',
+})
 </script>
 
 <template>

@@ -1,4 +1,7 @@
 {
+  "layouts": {
+    "title": "Dim Nuxt 3 Template"
+  },
   "language": "Sprache",
   "error": {
     "title": "Etwas hat schief gelaufen",
