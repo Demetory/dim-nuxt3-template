@@ -1,13 +1,13 @@
 <script setup lang="ts">
 // Data
 const edges = [
-  { id: 1, name: 'front', className: 'black', img: 'logo-black.svg' },
-  { id: 2, name: 'back', className: 'black', img: 'logo-black.svg' },
-  { id: 3, name: 'right', className: 'white', img: 'logo-white.svg' },
-  { id: 4, name: 'left', className: 'white', img: 'logo-white.svg' },
-  { id: 5, name: 'top', className: 'black', img: 'logo-black.svg' },
-  { id: 6, name: 'bottom', className: 'white', img: 'logo-white.svg' },
-]
+  { id: 1, name: "front", className: "black", img: "logo-black.svg" },
+  { id: 2, name: "back", className: "black", img: "logo-black.svg" },
+  { id: 3, name: "right", className: "white", img: "logo-white.svg" },
+  { id: 4, name: "left", className: "white", img: "logo-white.svg" },
+  { id: 5, name: "top", className: "black", img: "logo-black.svg" },
+  { id: 6, name: "bottom", className: "white", img: "logo-white.svg" },
+];
 </script>
 
 <template>
@@ -17,9 +17,10 @@ const edges = [
         <span
           v-for="(edge, index) in edges"
           :key="`edge-${index}`"
-          class="cube-edge" :class="[`cube-${edge.name}`, `cube-${edge.className}`]"
+          class="cube-edge"
+          :class="[`cube-${edge.name}`, `cube-${edge.className}`]"
         >
-          <img :src="useImage(edge.img)">
+          <img :src="useImage(edge.img)" />
         </span>
       </div>
     </router-link>

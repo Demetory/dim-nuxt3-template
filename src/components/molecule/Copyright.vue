@@ -1,20 +1,20 @@
 <script setup lang="ts">
 // Modules
-import { useExamplePiniaStore } from '@/store/examplePinia'
+import { useExamplePiniaStore } from "@/store/examplePinia";
 
 // Data
-const examplePiniaStore = useExamplePiniaStore()
-const date: Date = new Date()
-const dateTZ: Date = useDateTZ(date, 'Asia/Jakarta')
+const examplePiniaStore = useExamplePiniaStore();
+const date: Date = new Date();
+const dateTZ: Date = useDateTZ(date, "Asia/Jakarta");
 
 // Computed Properties
 const getYear = computed(() => {
-  return dateTZ.getFullYear()
-})
+  return dateTZ.getFullYear();
+});
 
 const getCopyright = computed(() => {
-  return examplePiniaStore.copyright
-})
+  return examplePiniaStore.copyright;
+});
 </script>
 
 <template>

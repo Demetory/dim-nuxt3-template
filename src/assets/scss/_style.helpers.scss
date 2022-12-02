@@ -3,7 +3,7 @@
    ========================================================================== */
 
 // Hide visually and from screen readers
-.hidden, 
+.hidden,
 [hidden] {
   display: none !important;
 }
@@ -25,17 +25,16 @@
   overflow: hidden;
   white-space: nowrap;
 
-  .focusable{
+  .focusable {
     &:active,
     &:focus {
       position: static;
       margin: 0;
       width: auto;
       height: auto;
-      clip: auto;     
+      clip: auto;
       overflow: visible;
       white-space: inherit;
-      
     }
   }
 }

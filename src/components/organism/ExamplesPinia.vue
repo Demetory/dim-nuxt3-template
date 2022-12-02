@@ -1,9 +1,9 @@
 <script setup lang="ts">
 // Modules
-import { useExamplePiniaStore } from '@/store/examplePinia'
+import { useExamplePiniaStore } from "@/store/examplePinia";
 
 // Data
-const examplePiniaStore = useExamplePiniaStore()
+const examplePiniaStore = useExamplePiniaStore();
 </script>
 
 <template>
@@ -11,19 +11,13 @@ const examplePiniaStore = useExamplePiniaStore()
     <template #icon>
       <AtomIconModule />
     </template>
-    <template #heading>
-      Pinia Example
-    </template>
+    <template #heading> Pinia Example </template>
     <template #content>
       <p>Count: {{ examplePiniaStore.count }} | Input: {{ examplePiniaStore.input }}</p>
       <p>
-        <button class="btn" @click.stop="examplePiniaStore.increment()">
-          Increment
-        </button>
-        <button class="btn" @click.stop="examplePiniaStore.decrement()">
-          Decrement
-        </button>
-        <input v-model="examplePiniaStore.input" class="input" type="text">
+        <button class="btn" @click.stop="examplePiniaStore.increment()">Increment</button>
+        <button class="btn" @click.stop="examplePiniaStore.decrement()">Decrement</button>
+        <input v-model="examplePiniaStore.input" class="input" type="text" />
       </p>
       <p>
         Pinia

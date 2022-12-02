@@ -1,10 +1,10 @@
 <script setup lang="ts">
 // Data
 const data = [
-  { path: '/', translate: 'home' },
-  { path: '/examples', translate: 'examples' },
-  { path: '/error', translate: 'error' },
-]
+  { path: "/", translate: "home" },
+  { path: "/examples", translate: "examples" },
+  { path: "/error", translate: "error" },
+];
 </script>
 
 <template>
