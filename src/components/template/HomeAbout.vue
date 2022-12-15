@@ -1,22 +1,30 @@
+<script setup lang="ts">
+// Modules
+import { useExamplePiniaStore } from "@/store/examplePinia";
+
+// Data
+const examplePiniaStore = useExamplePiniaStore();
+</script>
+
 <template>
-  <TemplateSlot>
+  <AtomSlot>
     <template #icon>
-      <AtomIconDocumentation />
+      <IconDocumentation class="icon" />
     </template>
-    <template #heading> Nuxt 3 Starter Template </template>
+    <template #heading> What`s this about </template>
     <template #content>
-      <p>
-        This project is served and bundled with
-        <a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite</a>, uses
-        <a href="https://www.typescriptlang.org/" target="_blank" rel="noopener">TypeScript</a> for strong typing and
-        <a href="https://vuejs.org/api/sfc-script-setup.html" target="_blank" rel="noopener">Script Setup SFC</a>.
-      </p>
-      <p>
-        Vue’s
-        <a href="https://vuejs.org/" target="_blank" rel="noopener">official documentation</a>
-        provides you with all information you need to get started.
-      </p>
-      <p>Designed with <a href="https://vuefront.com/develop/" target="_blank" rel="noopener">Atomic Pattern</a>.</p>
+      <ul>
+        <li>
+          Based on <AtomLink :params="examplePiniaStore.links.nuxt" /> framework and uses
+          <AtomLink :params="examplePiniaStore.links.vite" /> as project build tool.
+        </li>
+        <li>
+          Full
+          <AtomLink :params="examplePiniaStore.links.typescript" /> support, structured with
+          <AtomLink :params="examplePiniaStore.links.atomic" /> and
+          <AtomLink :params="examplePiniaStore.links.sfc" />
+        </li>
+      </ul>
     </template>
-  </TemplateSlot>
+  </AtomSlot>
 </template>

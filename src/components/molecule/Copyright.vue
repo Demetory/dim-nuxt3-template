@@ -9,28 +9,20 @@ const dateTZ: Date = useDateTZ(date, "Asia/Jakarta");
 
 // Computed Properties
 const getYear = computed(() => {
-  return dateTZ.getFullYear();
-});
-
-const getCopyright = computed(() => {
-  return examplePiniaStore.copyright;
+  return new String(useDateToRoman(dateTZ.getFullYear()));
 });
 </script>
 
 <template>
   <p class="copyright">
-    {{ getYear }} &copy;
-
-    <template v-for="(item, index) in getCopyright" :key="`link-${index}`">
-      <AtomLink :link="item" />
-      <span v-if="index !== Object.keys(getCopyright).length - 1"> | </span>
-    </template>
+    {{ getYear }} &copy; <AtomLink :params="examplePiniaStore.links.demetory" /> |
+    <AtomLink :params="examplePiniaStore.links.nuxttemplate" />
   </p>
 </template>
 
 <style scoped lang="scss">
 .copyright {
-  margin-top: 1rem;
+  margin-top: 2rem;
   text-align: center;
 }
 </style>
