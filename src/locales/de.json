@@ -1,17 +1,33 @@
 {
-  "layouts": {
-    "title": "Dim Nuxt 3 Template"
+  "common": {
+    "siteTitle": "Nuxt Starter Template",
+    "siteNavi": {
+      "home": "Startseite",
+      "example": "Beispiele",
+      "error": "404"
+    },
+    "siteSwitcher": {
+      "lang": {
+        "title": "Sprache"
+      },
+      "mode": {
+        "title": "Farbschema",
+        "body": {
+          "dark": "Dunkel",
+          "light": "Licht"
+        }
+      }
+    }
   },
-  "language": "Sprache",
-  "error": {
-    "title": "Etwas hat schief gelaufen",
-    "code": "Fehlercode",
-    "message": "Meldung",
-    "back": "Zurück zur Startseite"
-  },
-  "navi": {
-    "home": "Startseite",
-    "examples": "Beispiele",
-    "error": "404"
+
+  "pages": {
+    "error": {
+      "title": "Etwas hat schief gelaufen",
+      "body": {
+        "code": "Fehlercode",
+        "message": "Meldung",
+        "back": "Zurück zur Startseite"
+      }
+    }
   }
 }

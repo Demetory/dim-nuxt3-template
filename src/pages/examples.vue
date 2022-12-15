@@ -1,13 +1,17 @@
 <script setup lang="ts">
-// Hooks
+// Methods
 definePageMeta({
-  title: "navi.examples",
+  title: "common.siteNavi.example",
+});
+
+useHead({
+  meta: [{ name: "description", content: "Nuxt Starter Template" }],
 });
 </script>
 
 <template>
-  <article>
-    <OrganismExamplesVueUse />
-    <OrganismExamplesPinia />
-  </article>
+  <div class="page-wrapper">
+    <TemplateExamplesVueUse />
+    <TemplateExamplesPinia />
+  </div>
 </template>

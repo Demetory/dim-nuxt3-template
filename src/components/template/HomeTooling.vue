@@ -1,28 +1,27 @@
+<script setup lang="ts">
+// Modules
+import { useExamplePiniaStore } from "@/store/examplePinia";
+
+// Data
+const examplePiniaStore = useExamplePiniaStore();
+</script>
+
 <template>
-  <TemplateSlot>
+  <AtomSlot>
     <template #icon>
-      <AtomIconTooling />
+      <IconTooling class="icon" />
     </template>
     <template #heading> Tooling </template>
     <template #content>
       <ul>
         <li>
-          Recommended IDE setup:
-          <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">VSCode</a>
-          +
-          <a href="https://github.com/johnsoncodehk/volar" target="_blank" rel="noopener">Volar</a>
-          +
-          <a href="https://github.com/vuejs/devtools" target="_blank" rel="noopener">Vue Dev Tools</a>
+          Recommended IDE: <AtomLink :params="examplePiniaStore.links.vscode" /> +
+          <AtomLink :params="examplePiniaStore.links.volar" /> +
+          <AtomLink :params="examplePiniaStore.links.devtools" />
         </li>
-        <li>
-          End-to-End testing framework:
-          <a href="https://www.cypress.io/" target="_blank" rel="noopener">Cypress</a>
-        </li>
-        <li>
-          Unit testing framework:
-          <a href="https://vitest.dev/" target="_blank" rel="noopener">Vitest</a>
-        </li>
+        <li>End-to-End testing framework: <AtomLink :params="examplePiniaStore.links.cypress" /></li>
+        <li>Unit testing framework: <AtomLink :params="examplePiniaStore.links.vitest" /></li>
       </ul>
     </template>
-  </TemplateSlot>
+  </AtomSlot>
 </template>

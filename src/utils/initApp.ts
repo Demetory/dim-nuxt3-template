@@ -1,6 +1,5 @@
 // Runs by application start
 const InitApp = () => {
-  // Setting base css in index.html
   useHead({
     link: [
       {
@@ -11,10 +10,17 @@ const InitApp = () => {
         rel: "stylesheet",
         href: "/css/noscript.css",
       },
+      {
+        rel: "author",
+        href: "/humans.txt",
+      },
+      {
+        rel: "manifest",
+        href: "/site.webmanifest",
+      },
     ],
   });
 
-  // Shows welcome logo in console
   useConsoleImage(exampleLogo);
 };
 

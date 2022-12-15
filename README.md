@@ -2,28 +2,32 @@
 
 - [Nuxt 3](https://nuxt.com/) Minimalistic Starter Template
 - Uses [TypeScript](https://www.typescriptlang.org/) and [Script Setup SFC](https://vuejs.org/api/sfc-script-setup.html)
+- Designed with [Atomic Pattern](https://vuefront.com/develop/)
 
 ## Features
 
-- Full configured and ready
+- Full configured and production ready
 - No complex || heavy dependencies
-- Atomic Design Patter
-- Pre-configured HTML index page (including SEO-metatags and No-Script section)
-- Prepared public folder (icons, robots.txt, htaccess, humans.txt, etc)
+- Atomic Design Pattern
+- Configured public folder (icons, robots.txt, htaccess, humans.txt, etc)
 - CSS normalization
 - SCSS Maps and Modules in global scope
-- Simple code examples for Storage, Composables, TypeScript, Modules
+- Contains simple code examples
 - ESLint + Prettier for better code quality
 - Cypress + Vitest for testing
-- Localiztion example
+- Localiztion examples
+- Light / Dark color modes
 - Custom error page
+- All Google Lighthouse metrics are green ^-^
   <br/><br/>
 
 ## Preview
 
-[Live Demo](http://nuxt3-template.demetrey.ru/)
+[Live Demo](https://nuxt3-template.demetrey.ru/)
 <br/><br/>
 ![image](/src/public/cover.jpg)
+<br/>
+![image](/src/public/images/lighthouse.png)
 <br/><br/>
 
 ## Requirements
@@ -34,7 +38,7 @@
 
 ## Recommended IDE
 
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) + [Vue Dev Tools](https://github.com/vuejs/devtools)
   <br/><br/>
 
 ## Installed Modules
@@ -88,7 +92,7 @@ npm run build
 npm run generate
 ```
 
-Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment).
+Checkout the [deployment documentation](https://nuxt.com/docs/getting-started/deployment).
 
 ## Linting
 
