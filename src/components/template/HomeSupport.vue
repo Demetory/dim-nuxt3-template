@@ -4,26 +4,19 @@ import { useExamplePiniaStore } from "@/store/examplePinia";
 
 // Data
 const examplePiniaStore = useExamplePiniaStore();
-
-// Methods
-const getLinkUrl = (value: string) => {
-  return examplePiniaStore.getCopyrightUrl("type", value);
-};
 </script>
 
 <template>
-  <TemplateSlot>
+  <AtomSlot>
     <template #icon>
-      <AtomIconSupport />
+      <IconSupport class="icon" />
     </template>
     <template #heading> Support </template>
     <template #content>
       <p>
-        Visit my
-        <a :href="getLinkUrl('homepage')" target="_blank" rel="noopener">homepage</a>
-        and this
-        <a :href="getLinkUrl('repo')" target="_blank" rel="noopener">template repo</a>
+        Visit my homepage <AtomLink :params="examplePiniaStore.links.demetory" /> and check this project repo
+        <AtomLink :params="examplePiniaStore.links.nuxttemplate" />
       </p>
     </template>
-  </TemplateSlot>
+  </AtomSlot>
 </template>

@@ -1,17 +1,33 @@
 {
-  "layouts": {
-    "title": "Dim Nuxt 3 Template"
+  "common": {
+    "siteTitle": "Nuxt Starter Template",
+    "siteNavi": {
+      "home": "Главная",
+      "example": "Примеры",
+      "error": "404"
+    },
+    "siteSwitcher": {
+      "lang": {
+        "title": "Язык"
+      },
+      "mode": {
+        "title": "Режим",
+        "body": {
+          "dark": "Тёмный",
+          "light": "Светлый"
+        }
+      }
+    }
   },
-  "language": "Язык",
-  "error": {
-    "title": "Что-то пошло не так",
-    "code": "Код ошибки",
-    "message": "Сообщение",
-    "back": "На главную"
-  },
-  "navi": {
-    "home": "Главная",
-    "examples": "Примеры",
-    "error": "404"
+
+  "pages": {
+    "error": {
+      "title": "Что-то пошло не так",
+      "body": {
+        "code": "Код ошибки",
+        "message": "Сообщение",
+        "back": "На главную"
+      }
+    }
   }
 }

@@ -1,18 +1,16 @@
 <script setup lang="ts">
+// Modules
+import { useExamplePiniaStore } from "@/store/examplePinia";
+
 // Data
-const data = [
-  { path: "/", translate: "home" },
-  { path: "/examples", translate: "examples" },
-];
+const examplePiniaStore = useExamplePiniaStore();
 </script>
 
 <template>
   <nav>
-    <p>
-      <NuxtLink v-for="(link, index) in data" :key="`navi-${index}`" :to="link.path">
-        {{ $t(`navi.${link.translate}`) }}
-      </NuxtLink>
-    </p>
+    <NuxtLink v-for="(link, index) in examplePiniaStore.navi" :key="`navi-${index}`" :to="link.path">
+      {{ $t(`${link.translate}`) }}
+    </NuxtLink>
   </nav>
 </template>
 
@@ -20,6 +18,7 @@ const data = [
 nav {
   display: flex;
   flex-direction: row;
+  margin: 1.5rem 0 1rem;
 
   a:not(:last-child) {
     margin-right: grid.$gap;

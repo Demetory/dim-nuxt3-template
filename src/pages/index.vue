@@ -1,15 +1,19 @@
 <script setup lang="ts">
-// Hooks
+// Methods
 definePageMeta({
-  title: "navi.home",
+  title: "common.siteNavi.home",
+});
+
+useHead({
+  meta: [{ name: "description", content: "Nuxt Starter Template" }],
 });
 </script>
 
 <template>
-  <article>
+  <div class="page-wrapper">
     <TemplateHomeAbout />
     <TemplateHomeTooling />
     <TemplateHomeModules />
     <TemplateHomeSupport />
-  </article>
+  </div>
 </template>

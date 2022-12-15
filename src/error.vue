@@ -1,4 +1,8 @@
 <script setup lang="ts">
+// Modules
+import { useI18n } from "vue-i18n";
+import { useExamplePiniaStore } from "@/store/examplePinia";
+
 // Types
 import IError from "@/types/IError";
 
@@ -11,47 +15,75 @@ defineProps({
 });
 
 // Data
-const siteTitle = "Dim Nuxt 3 Template";
+const { locale, t } = useI18n();
+const examplePiniaStore = useExamplePiniaStore();
+const route = useRoute();
+const siteTitle = t("common.siteTitle");
+
+// Computed Properties
+const getColorMode = computed(() => {
+  if (typeof examplePiniaStore.colorMode === "string") {
+    let result = examplePiniaStore.colorMode.toLocaleLowerCase();
+    return `mode-${result}`;
+  }
+});
+
+const getSiteTitle = computed(() => {
+  const translate = route.meta.title ? t(`${route.meta.title}`) : null;
+  const result = translate ? `${siteTitle} | ${translate}` : siteTitle;
+  return result;
+});
 
 // Methods
 InitApp();
+
+useHead({ title: getSiteTitle });
 
 const handleError = () => clearError({ redirect: "/" });
 </script>
 
 <template>
-  <Html :lang="$i18n.locale">
-    <Head>
-      <Title>{{ siteTitle }}</Title>
-    </Head>
-
+  <Html :lang="locale" :class="getColorMode">
     <Body>
       <NoScript>
         <section class="noscript">
-          <img src="/images/fatality.svg" />
+          <img alt="Fatality" src="/images/fatality.svg" />
           <div>
             <h1>Easy, Tiger</h1>
-            <p>Turn JavaScript on, don`t be so paraniod.</p>
+            <p>Turn JavaScript on, dont be so paraniod.</p>
           </div>
         </section>
       </NoScript>
 
-      <NuxtLayout>
-        <section class="page-error">
-          <h1>{{ $t("error.title") }}</h1>
-          <p>{{ $t("error.code") }}: {{ error.statusCode }}</p>
-          <p>{{ $t("error.message") }}: {{ error.statusMessage }}</p>
+      <NuxtLoadingIndicator />
+
+      <div class="page">
+        <TemplateSiteHeader />
+        <main class="page-container page-404">
+          <h1>{{ $t("pages.error.title") }}</h1>
+          <p>{{ $t("pages.error.body.code") }}: {{ error.statusCode }}</p>
+          <p>{{ $t("pages.error.body.message") }}: {{ error.statusMessage }}</p>
           <p>
-            <a @click.stop="handleError">{{ $t("error.back") }}</a>
+            <a @click.stop="handleError">{{ $t("pages.error.body.back") }}</a>
           </p>
-        </section>
-      </NuxtLayout>
+        </main>
+      </div>
     </Body>
   </Html>
 </template>
 
 <style scoped lang="scss">
-.page-error {
+.page-404 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  padding: grid.$gap;
+
+  h1 {
+    margin-bottom: 1rem;
+  }
+
   p {
     margin: 1rem 0;
   }
