@@ -18,7 +18,7 @@ const edges = [
     <router-link :to="url">
       <figure class="cube__figure">
         <span v-for="(edge, index) in edges" :key="`edge-${index}`" :class="['cube__edge', `cube__edge-${edge.name}`]">
-          <img alt="Demetory" :src="useImage(edge.img)" />
+          <img alt="Demetory" :src="useImage(edge.img)" width="100" height="100" />
         </span>
       </figure>
     </router-link>
