@@ -10,10 +10,10 @@ useHead({
 </script>
 
 <template>
-  <div class="page-wrapper">
+  <article>
     <TemplateHomeAbout />
     <TemplateHomeTooling />
     <TemplateHomeModules />
     <TemplateHomeSupport />
-  </div>
+  </article>
 </template>

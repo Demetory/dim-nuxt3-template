@@ -10,8 +10,8 @@ useHead({
 </script>
 
 <template>
-  <div class="page-wrapper">
-    <TemplateExamplesVueUse />
-    <TemplateExamplesPinia />
-  </div>
+  <article>
+    <OrganismExampleVueUse />
+    <OrganismExamplePinia />
+  </article>
 </template>
