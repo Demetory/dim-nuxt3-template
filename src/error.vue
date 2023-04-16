@@ -5,7 +5,7 @@ import { useI18n } from "vue-i18n";
 import IError from "@/types/IError";
 
 // Props
-defineProps({
+const props = defineProps({
   error: {
     type: Object as () => IError,
     required: true,
@@ -29,7 +29,9 @@ InitApp();
 
 useHead({ title: getSiteTitle });
 
-const handleError = () => clearError({ redirect: "/" });
+const handleError = () => {
+  clearError({ redirect: "/" });
+};
 </script>
 
 <template>

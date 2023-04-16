@@ -7,14 +7,11 @@
 
       <ClientOnly>
         <OrganismSwitchColor />
+        <OrganismSwitchLang />
       </ClientOnly>
     </section>
 
     <MoleculeCopyright />
-
-    <!--
-      <OrganismSwitchLang />
-   -->
   </header>
 </template>
 
@@ -35,7 +32,7 @@ header {
     margin: auto auto;
   }
   .switcher {
-    margin-top: 64px;
+    margin: 48px 0 32px;
   }
   .heading {
     margin: 1rem 0;

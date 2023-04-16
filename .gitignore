@@ -3,6 +3,7 @@
 .nitro
 .cache
 .env
+.yarn
 nuxt.d.ts
 
 # Logs

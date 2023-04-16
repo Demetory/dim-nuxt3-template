@@ -21,6 +21,7 @@ const links = [
   { url: "https://vitest.dev/", text: "Vitest", type: "link-unit" },
   { url: "https://nuxt.com/", text: "Nuxt", type: "link-nuxt" },
   { url: "https://kazupon.github.io/vue-i18n/", text: "Vue i18n", type: "link-i18" },
+  { url: "https://nuxt.com/docs/getting-started/data-fetching", text: "fetching data", type: "link-usefetch" },
 ];
 
 // Export

@@ -36,7 +36,7 @@ void getDayTime();
 
 <template>
   <section class="switcher switcher-color" @click.stop="switchTheme()">
-    <span>switch to</span>
+    <span>{{ $t("common.siteSwitcher.mode.title") }}</span>
     <span class="btn">
       <img alt="Site Theme" :src="useImage(`switch-${daytime}.svg`)" />
     </span>

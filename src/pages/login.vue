@@ -1,7 +1,7 @@
 <script setup lang="ts">
 // Methods
 definePageMeta({
-  title: "common.siteNavi.example",
+  title: "common.siteNavi.login",
 });
 
 useHead({
@@ -11,8 +11,6 @@ useHead({
 
 <template>
   <article>
-    <OrganismExampleVueUse />
-    <OrganismExampleUseFetch />
-    <OrganismExamplePinia />
+    <h1>{{ $t("pages.login.body") }}</h1>
   </article>
 </template>
