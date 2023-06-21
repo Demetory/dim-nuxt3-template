@@ -48,7 +48,7 @@
 ### Install the dependencies
 
 ```bash
-npm install
+npm install --force
 ```
 
 ### Update deps if needed
